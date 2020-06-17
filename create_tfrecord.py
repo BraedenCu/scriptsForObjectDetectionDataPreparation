@@ -34,9 +34,9 @@ def class_text_to_int(row_label):
         return 2
     if row_label == 'gt':
         return 3
-    if row_label == 'bt':
-        return 4
     if row_label == 'rt':
+        return 4
+    if row_label == 'bt':
         return 5
     else:
         None
