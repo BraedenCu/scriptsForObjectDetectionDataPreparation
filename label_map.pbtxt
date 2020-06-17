@@ -1,0 +1,25 @@
+item {
+  id: 0
+  name: 'rb'
+  display_name: 'rb'
+}
+item {
+  id: 0
+  name: 'bb'
+  display_name: 'bb'
+}
+item {
+  id: 0
+  name: 'gt'
+  display_name: 'gt'
+}
+item {
+  id: 0
+  name: 'rt'
+  display_name: 'rt'
+}
+item {
+  id: 0
+  name: 'bt'
+  display_name: 'bt'
+}
