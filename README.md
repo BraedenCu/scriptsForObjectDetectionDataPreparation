@@ -1,2 +1,2 @@
 # scriptsForObjectDetectionDataPreparation
-credit to Datran for these extremely useful scripts.
+credit to Datitran for these extremely useful scripts.
