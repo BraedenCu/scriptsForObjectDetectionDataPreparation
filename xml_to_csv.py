@@ -3,7 +3,6 @@ import glob
 import pandas as pd
 import xml.etree.ElementTree as ET
 
-
 def xml_to_csv(path):
     xml_list = []
     for xml_file in glob.glob(path + '/*.xml'):
@@ -26,10 +25,16 @@ def xml_to_csv(path):
 
 
 def main():
-    image_path = os.path.join(os.getcwd(), 'annotations')
+    #NEED TO CHANGE THE FOLLOWING LINE TO RESPECTIVE PATH
+    image_path = os.path.join('/root/annotations')
     xml_df = xml_to_csv(image_path)
     xml_df.to_csv('vex_labels.csv', index=None)
-    print('Successfully converted xml to csv.')
-
+    #added the following to check if the file is empty, because I was having issues 
+    #following path also needs to change
+    df = pd.read_csv("/root/scriptsForObjectDetectionDataPreparation/vex_labels.csv) # or pd.read_excel(filename) for xls file
+    if df.empty:
+        print("error converting to csv, the pandas dataframe contained in the file is empty")
+    else:
+        print('Successfully converted xml to csv.')
 
 main()
