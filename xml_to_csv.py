@@ -31,7 +31,7 @@ def main():
     xml_df.to_csv('vex_labels.csv', index=None)
     #added the following to check if the file is empty, because I was having issues 
     #following path also needs to change
-    df = pd.read_csv("/root/scriptsForObjectDetectionDataPreparation/vex_labels.csv) # or pd.read_excel(filename) for xls file
+    df = pd.read_csv("/root/scriptsForObjectDetectionDataPreparation/vex_labels.csv") 
     if df.empty:
         print("error converting to csv, the pandas dataframe contained in the file is empty")
     else:
